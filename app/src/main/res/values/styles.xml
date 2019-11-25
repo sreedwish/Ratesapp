@@ -8,4 +8,27 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="text_rate" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/rate_font_size</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="text_code" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/title_font_size</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="text_subtitle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/subtitle_font_size</item>
+        <item name="android:textColor">@color/text_grey</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+
+
+
+
 </resources>

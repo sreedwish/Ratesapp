@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:contentPadding="@dimen/content_padding"
+    app:cardCornerRadius="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgFlag"
+            android:layout_width="@dimen/image_h_w"
+            android:layout_height="@dimen/image_h_w"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_code"
+            app:layout_constraintStart_toEndOf="@id/imgFlag"
+            app:layout_constraintTop_toTopOf="@id/imgFlag"
+            app:layout_constraintBottom_toTopOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/tvRate"
+            android:layout_marginStart="@dimen/title_margin"
+            android:layout_marginEnd="@dimen/title_margin"
+            app:lineHeight="24dp"
+            android:text="AED"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/text_subtitle"
+            app:layout_constraintStart_toStartOf="@id/tvCode"
+            app:layout_constraintTop_toBottomOf="@id/tvCode"
+            app:layout_constraintEnd_toEndOf="@id/tvCode"
+            app:layout_constraintBottom_toBottomOf="@id/imgFlag"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="United arab emirates dirham"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/tvRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            style="@style/text_rate"
+            android:text="24566"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+</layout>
