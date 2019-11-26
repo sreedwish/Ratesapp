@@ -1,13 +1,11 @@
-package com.revolut.ratesapp.Models;
+package com.revolut.ratesapp.models;
 
+import com.google.gson.JsonElement;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import org.json.JSONObject;
+import okhttp3.ResponseBody;
 
-import java.util.ArrayList;
-import java.util.Currency;
-import java.util.List;
 
 public class RespGetRates {
 
@@ -47,8 +45,11 @@ public class RespGetRates {
 
     //**************** Rates class ***********************
 
-    public class Rates extends JSONObject {
+    public class Rates  {
 
+        @SerializedName("EUR")
+        @Expose
+        private Double eUR;
         @SerializedName("AUD")
         @Expose
         private Double aUD;
@@ -403,6 +404,44 @@ public class RespGetRates {
         }
 
 
+        @Override
+        public String toString() {
+            return "{" +
+                    "eUR=" + eUR +
+                    ", aUD=" + aUD +
+                    ", bGN=" + bGN +
+                    ", bRL=" + bRL +
+                    ", cAD=" + cAD +
+                    ", cHF=" + cHF +
+                    ", cNY=" + cNY +
+                    ", cZK=" + cZK +
+                    ", dKK=" + dKK +
+                    ", gBP=" + gBP +
+                    ", hKD=" + hKD +
+                    ", hRK=" + hRK +
+                    ", hUF=" + hUF +
+                    ", iDR=" + iDR +
+                    ", iLS=" + iLS +
+                    ", iNR=" + iNR +
+                    ", iSK=" + iSK +
+                    ", jPY=" + jPY +
+                    ", kRW=" + kRW +
+                    ", mXN=" + mXN +
+                    ", mYR=" + mYR +
+                    ", nOK=" + nOK +
+                    ", nZD=" + nZD +
+                    ", pHP=" + pHP +
+                    ", pLN=" + pLN +
+                    ", rON=" + rON +
+                    ", rUB=" + rUB +
+                    ", sEK=" + sEK +
+                    ", sGD=" + sGD +
+                    ", tHB=" + tHB +
+                    ", tRY=" + tRY +
+                    ", uSD=" + uSD +
+                    ", zAR=" + zAR +
+                    '}';
+        }
     }
 
     }

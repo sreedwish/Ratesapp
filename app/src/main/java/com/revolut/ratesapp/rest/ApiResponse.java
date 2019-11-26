@@ -1,13 +1,13 @@
-package com.revolut.ratesapp.Rest;
+package com.revolut.ratesapp.rest;
 
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
-import static com.revolut.ratesapp.Rest.Status.ERROR;
-import static com.revolut.ratesapp.Rest.Status.LOADING;
-import static com.revolut.ratesapp.Rest.Status.SUCCESS;
+import static com.revolut.ratesapp.rest.Status.ERROR;
+import static com.revolut.ratesapp.rest.Status.LOADING;
+import static com.revolut.ratesapp.rest.Status.SUCCESS;
 
 public class ApiResponse {
 

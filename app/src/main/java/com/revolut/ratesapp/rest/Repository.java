@@ -1,15 +1,18 @@
-package com.revolut.ratesapp.Rest;
+package com.revolut.ratesapp.rest;
 
 import androidx.annotation.Nullable;
 
-import com.revolut.ratesapp.Models.RespGetRates;
+import com.revolut.ratesapp.models.RespGetRates;
 import com.revolut.ratesapp.dagger.MyApplication;
 
 
+import org.json.JSONObject;
 
 import javax.inject.Singleton;
 
 import io.reactivex.Observable;
+import okhttp3.ResponseBody;
+import retrofit2.Response;
 
 @Singleton
 public class Repository {
@@ -31,7 +34,7 @@ public class Repository {
      * @param base_currency
      * @return
      */
-    public Observable<RespGetRates> getCurrencyRates(@Nullable String base_currency){
+    public Observable<ResponseBody> getCurrencyRates(@Nullable String base_currency){
 
         return apiService.getRates(base_currency);
     }

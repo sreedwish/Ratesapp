@@ -4,8 +4,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.revolut.ratesapp.Rest.Repository;
-import com.revolut.ratesapp.ViewModels.RatesViewModel;
+import com.revolut.ratesapp.rest.Repository;
+import com.revolut.ratesapp.viewmodels.RatesViewModel;
 
 import javax.inject.Inject;
 

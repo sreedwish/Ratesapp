@@ -1,6 +1,6 @@
-package com.revolut.ratesapp.Rest;
+package com.revolut.ratesapp.rest;
 
-import com.revolut.ratesapp.Utils.CheckingValues;
+import com.revolut.ratesapp.utils.CheckingValues;
 
 import java.io.IOException;
 

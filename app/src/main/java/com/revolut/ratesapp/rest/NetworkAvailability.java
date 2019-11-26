@@ -1,4 +1,4 @@
-package com.revolut.ratesapp.Rest;
+package com.revolut.ratesapp.rest;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

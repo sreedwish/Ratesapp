@@ -1,6 +1,4 @@
-package com.revolut.ratesapp.Rest;
-
-import android.text.TextUtils;
+package com.revolut.ratesapp.rest;
 
 import androidx.lifecycle.ViewModelProvider;
 

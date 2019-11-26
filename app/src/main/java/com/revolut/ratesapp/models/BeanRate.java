@@ -1,11 +1,11 @@
-package com.revolut.ratesapp.Models;
+package com.revolut.ratesapp.models;
 
 public class BeanRate {
 
     String c_code, c_name, base_code;
     double c_value;
     int c_flag;
-    double rate_difference ;
+
 
     public String getC_code() {
         return c_code;
@@ -39,19 +39,20 @@ public class BeanRate {
         this.c_flag = c_flag;
     }
 
-    public double getRate_difference() {
-        return rate_difference;
-    }
 
-    public void setRate_difference(double rate_difference) {
-        this.rate_difference = rate_difference;
-    }
-
-    public String getBase_code() {
-        return base_code;
-    }
 
     public void setBase_code(String base_code) {
         this.base_code = base_code;
+    }
+
+    @Override
+    public String toString() {
+        return "BeanRate{" +
+                "c_code='" + c_code + '\'' +
+                ", c_name='" + c_name + '\'' +
+                ", base_code='" + base_code + '\'' +
+                ", c_value=" + c_value +
+                ", c_flag=" + c_flag +
+                '}';
     }
 }

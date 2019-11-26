@@ -3,8 +3,8 @@ package com.revolut.ratesapp.dagger;
 import android.app.Application;
 import android.content.Context;
 
-import com.revolut.ratesapp.Rest.ApiClientModule;
-import com.revolut.ratesapp.Rest.NetworkAvailability;
+import com.revolut.ratesapp.rest.ApiClientModule;
+import com.revolut.ratesapp.rest.NetworkAvailability;
 
 public class MyApplication  extends Application {
 
