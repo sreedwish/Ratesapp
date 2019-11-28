@@ -86,12 +86,7 @@ public class Converter {
             rate.setC_name(currency.getName());
             rate.setC_flag(currency.getFlag());
 
-            //Difference between base and item
-            // double diff = base_value - value;
 
-            //Set difference
-            rate.setBase_code(base);
-            //rate.setRate_difference(diff);
 
         }catch (Exception e){
             e.printStackTrace();

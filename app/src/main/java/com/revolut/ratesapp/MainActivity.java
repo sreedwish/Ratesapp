@@ -218,6 +218,7 @@ public class MainActivity extends AppCompatActivity {
 
                         if (count == 1) {
                             disableViews();
+                            binding.include.card.setVisibility(View.GONE);
                             binding.progress.setVisibility(View.VISIBLE);
                         }
                         isLoading = true;
@@ -226,6 +227,7 @@ public class MainActivity extends AppCompatActivity {
                     case SUCCESS:
                         if (count ==1) {
                             disableViews();
+                            binding.include.card.setVisibility(View.VISIBLE);
                         }
                         isLoading = false;
 

@@ -36,7 +36,7 @@ public class ConverterTest {
 
 
         expected.setC_value(new_val);
-        expected.setBase_code(key_eur);
+
 
 
         Converter converter = new Converter();
