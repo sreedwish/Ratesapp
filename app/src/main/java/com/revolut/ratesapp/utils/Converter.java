@@ -7,6 +7,7 @@ import com.revolut.ratesapp.models.BeanRate;
 
 import org.json.JSONObject;
 
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -36,12 +37,19 @@ public class Converter {
 
             }
 
+            //if last item is euro then update its position to 1
+            BeanRate lastItem = rateList.get(rateList.size() - 1);
+            if (lastItem.getC_code().equals("EUR")){
+                rateList.remove(lastItem);
+                rateList.add(0,lastItem);
+            }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        Logger.logFun(null,"rate list size " + rateList.size());
+
+
 
         return rateList;
     }
@@ -62,6 +70,12 @@ public class Converter {
 
             double new_val = Double.parseDouble(String.format("%.2f", base_value * value));
 
+            if (new_val < 0.01){
+                new_val = base_value * value;
+            }
+
+            //Logger.logFun(null, key + " computed val " + new_val);
+
             rate.setC_value( new_val);
 
             //Additional values
@@ -76,7 +90,7 @@ public class Converter {
             //rate.setRate_difference(diff);
 
         }catch (Exception e){
-
+            e.printStackTrace();
         }
 
         return rate;

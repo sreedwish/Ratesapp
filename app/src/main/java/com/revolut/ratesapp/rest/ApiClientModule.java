@@ -69,10 +69,11 @@ public class ApiClientModule {
                 .readTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(REQUEST_TIMEOUT, TimeUnit.SECONDS);
 
-        HttpLoggingInterceptor login_interceptor = new HttpLoggingInterceptor();
-        login_interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
+        HttpLoggingInterceptor logging_interceptor = new HttpLoggingInterceptor();
+        logging_interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-        httpClient.addInterceptor(login_interceptor);
+        //Uncomment this to log the okhttp output
+       // httpClient.addInterceptor(logging_interceptor);
 
 
         httpClient.addInterceptor(new Interceptor() {

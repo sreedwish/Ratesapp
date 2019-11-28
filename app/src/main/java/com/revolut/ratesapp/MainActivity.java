@@ -22,6 +22,7 @@ import com.revolut.ratesapp.dagger.GlideApp;
 import com.revolut.ratesapp.models.BeanRate;
 import com.revolut.ratesapp.rest.ApiResponse;
 import com.revolut.ratesapp.utils.CheckingValues;
+import com.revolut.ratesapp.utils.Logger;
 import com.revolut.ratesapp.viewmodels.RatesViewModel;
 import com.revolut.ratesapp.dagger.MyApplication;
 import com.revolut.ratesapp.dagger.ViewModelFactory;
@@ -227,6 +228,8 @@ public class MainActivity extends AppCompatActivity {
 
                         list.clear();
                         list.addAll((Collection<? extends BeanRate>) apiResponse.data);
+
+                        Logger.logFun(TAG, list.get(list.size()-1).getC_name());
 
                         if (!list.isEmpty()){
 

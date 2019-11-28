@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.revolut.ratesapp.models.BeanRate;
 import com.revolut.ratesapp.dagger.GlideApp;
 import com.revolut.ratesapp.databinding.RecyclerItemRateBinding;
+import com.revolut.ratesapp.utils.Logger;
 
 import java.text.NumberFormat;
 import java.util.List;
@@ -58,11 +59,20 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
         final BeanRate item = rateList.get(position);
 
 
+
         try {
             holder.binding.setDat(item);
 
             //formatting with comma seperator
-            String rate = NumberFormat.getNumberInstance(Locale.US).format(item.getC_value());
+            String rate = "" + item.getC_value();
+
+            try {
+                if (item.getC_value() > 100 ) {
+                    rate = NumberFormat.getNumberInstance(Locale.US).format(item.getC_value());
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
             holder.binding.edtRate.setText(rate);
 
@@ -83,6 +93,8 @@ public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> 
 
                 }
             });
+
+
 
 
         } catch (Exception e) {

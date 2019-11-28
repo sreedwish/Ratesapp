@@ -94,7 +94,7 @@ public class RatesViewModel extends ViewModel {
 
                                 JSONObject rate = jsonObject.getJSONObject("rates");
 
-                                Logger.logFun(null,  rate.toString());
+                                //Logger.logFun(null,  rate.toString());
 
                                 rateList.addAll(converter.toList( rate,base));
 
