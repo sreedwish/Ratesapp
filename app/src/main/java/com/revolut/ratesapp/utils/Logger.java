@@ -7,6 +7,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StyleableRes;
 
+
+/**
+ * Created by Sreedwish
+ */
 public class Logger {
 
    static boolean enabled = false;

@@ -7,6 +7,9 @@ import com.google.gson.annotations.SerializedName;
 import okhttp3.ResponseBody;
 
 
+/**
+ * Created by Sreedwish
+ */
 public class RespGetRates {
 
     @SerializedName("base")

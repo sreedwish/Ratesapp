@@ -23,6 +23,9 @@ import java.text.NumberFormat;
 import java.util.List;
 import java.util.Locale;
 
+/**
+ * Created by Sreedwish
+ */
 public class ItemsAdapter extends RecyclerView.Adapter<ItemsAdapter.ViewHolder> {
 
     private static final String TAG = "~~ItemsAdapter";

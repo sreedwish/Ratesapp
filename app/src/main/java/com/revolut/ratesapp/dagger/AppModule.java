@@ -7,6 +7,11 @@ import javax.inject.Singleton;
 import dagger.Module;
 import dagger.Provides;
 
+
+/**
+ * Created by Sreedwish
+ */
+
 @Module
 public class AppModule {
 

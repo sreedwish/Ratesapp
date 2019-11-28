@@ -6,6 +6,9 @@ import android.net.NetworkInfo;
 
 import javax.inject.Inject;
 
+/**
+ * Created by Sreedwish
+ */
 public class NetworkAvailability {
 
 

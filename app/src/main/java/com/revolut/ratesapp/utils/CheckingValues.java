@@ -1,5 +1,8 @@
 package com.revolut.ratesapp.utils;
 
+/**
+ * Created by Sreedwish
+ */
 public class CheckingValues {
 
     public static final String NO_INTERNET_MSG = "No internet..!";

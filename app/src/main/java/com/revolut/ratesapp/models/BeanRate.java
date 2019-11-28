@@ -1,5 +1,9 @@
 package com.revolut.ratesapp.models;
 
+
+/**
+ * Created by Sreedwish
+ */
 public class BeanRate {
 
     String c_code, c_name, base_code;

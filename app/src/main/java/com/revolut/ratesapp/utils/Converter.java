@@ -14,6 +14,10 @@ import java.util.List;
 
 import static com.revolut.ratesapp.utils.CheckingValues.base_value;
 
+
+/**
+ * Created by Sreedwish
+ */
 public class Converter {
 
     //Api response to the display format list

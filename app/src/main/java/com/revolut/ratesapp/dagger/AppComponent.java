@@ -8,6 +8,11 @@ import javax.inject.Singleton;
 
 import dagger.Component;
 
+
+/**
+ * Created by Sreedwish
+ */
+
 @Component(modules = {AppModule.class, ApiClientModule.class})
 @Singleton
 public interface AppComponent {

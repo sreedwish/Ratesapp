@@ -9,6 +9,10 @@ import static com.revolut.ratesapp.rest.Status.ERROR;
 import static com.revolut.ratesapp.rest.Status.LOADING;
 import static com.revolut.ratesapp.rest.Status.SUCCESS;
 
+
+/**
+ * Created by Sreedwish
+ */
 public class ApiResponse {
 
     public final Status status;

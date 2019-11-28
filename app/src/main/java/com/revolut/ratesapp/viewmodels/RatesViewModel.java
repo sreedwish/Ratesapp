@@ -31,6 +31,10 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.schedulers.Schedulers;
 import okhttp3.ResponseBody;
 
+
+/**
+ * Created by Sreedwish
+ */
 public class RatesViewModel extends ViewModel {
 
 

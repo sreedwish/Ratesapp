@@ -6,6 +6,11 @@ import android.content.Context;
 import com.revolut.ratesapp.rest.ApiClientModule;
 import com.revolut.ratesapp.rest.NetworkAvailability;
 
+
+/**
+ * Created by Sreedwish
+ */
+
 public class MyApplication  extends Application {
 
     //Dagger 2 components

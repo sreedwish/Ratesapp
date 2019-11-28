@@ -9,6 +9,11 @@ import com.revolut.ratesapp.viewmodels.RatesViewModel;
 
 import javax.inject.Inject;
 
+
+/**
+ * Created by Sreedwish
+ */
+
 public class ViewModelFactory implements ViewModelProvider.Factory  {
 
     public Repository repository;
